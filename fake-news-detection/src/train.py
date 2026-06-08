@@ -15,9 +15,9 @@ from torch.utils.data import Dataset, DataLoader
 from transformers import (
     DistilBertTokenizer,
     DistilBertForSequenceClassification,
-    AdamW,
     get_linear_schedule_with_warmup,
 )
+from transformers import AdamW
 from tqdm import tqdm
 import warnings
 warnings.filterwarnings("ignore")

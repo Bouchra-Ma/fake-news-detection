@@ -29,7 +29,7 @@ def clean_text(text: str) -> str:
     return re.sub(r"\s+", " ", text).strip()
 
 
-def load_data(data_path="data/"):
+def load_data(data_path=r"C:\Users\Utilisateur\Downloads\fake-news-detection\data"):
     true_path = os.path.join(data_path, "True.csv")
     fake_path = os.path.join(data_path, "Fake.csv")
     if os.path.exists(true_path) and os.path.exists(fake_path):
